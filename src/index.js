@@ -1,4 +1,3 @@
-import devtools from "@vue/devtools"
 import Vue from "vue"
 import vuetify from "./plugins/vuetify"
 import App from "./App"
@@ -11,6 +10,7 @@ const render = () => {
                      vuetify,
                      render: h => h(App)
     }).$mount("#app")
+    return vm
 }
 
 render()

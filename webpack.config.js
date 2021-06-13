@@ -51,6 +51,12 @@ module.exports = {
                 enforce: "pre",
                 use: ["source-map-loader"],
             },
+            {
+                enforce: "pre",
+                test: /\.(js|vue)$/,
+                loader: "eslint-loader",
+                exclude: /node-modules/,
+            },
         ],
     }
 }
